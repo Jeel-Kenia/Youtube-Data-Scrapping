@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import time
  
 #Get the API key, service and version
-api_key = 'AIzaSyDMJpCndnzlG39mWNxE41M4RtbvqRnwx9U'
+api_key = 'Enter the API Key taken from Google Console'
 api_service_name = "youtube"
 api_version = "v3"
 # Get credentials and create an API client
@@ -420,7 +420,7 @@ def comment_details_sql(videoid,mongo_data):
         cur.close()
         connection.close()
 
-##### functions for running sql queries for data analysis ####
+##Functions for running sql queries for data analysis
 
 def get_video_channel_data():
     cur, connection = sql_connection()
@@ -789,7 +789,7 @@ def query_data():
         return get_max_comments_data()
         
 
-#### Code for Streamlit application ####
+##Setup and functions for Streamlit application
 
 #Setting page lavout
 st.set_page_config(
@@ -843,7 +843,7 @@ selected_page = st.sidebar.selectbox('Select Page', list(pages.keys()))
 pages[selected_page]()
 
 
-##### Functions for Streamlit app ######
+##Final Code for Streamlit app
 
 if get_channl_stats:
     if channel_id:
@@ -858,7 +858,6 @@ if get_channl_stats:
 if push_mongodb:
     if channel_id:
         data = get_channel_stats(youtube, channel_id)
-        #st.write("My",data)
         push_to_mongodb(data)
     
 if push_sql:
@@ -868,5 +867,4 @@ if push_sql:
     videoid = video_details_sql(playlistid)
     comment_details_sql(videoid,mongo_data)
     st.success('Data pushed to SQL successfully!')
-
-query_data()
+    
