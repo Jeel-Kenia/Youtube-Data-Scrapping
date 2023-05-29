@@ -15,6 +15,8 @@
 
 [License](#License)
 
+[Conclusion](#Conclusion)
+
 ## Introduction
 This project is a YouTube API scrapper that allows users to retrieve and analyze data from YouTube channels. It utilizes the YouTube Data API to fetch information such as channel statistics, video details, comments, and more. The scrapper provides various functionalities to extract and process YouTube data for further analysis and insights.
 
@@ -58,21 +60,21 @@ Store the collected YouTube data in a database for easy retrieval and future ref
 **`pip install -r requirements.txt:`** To install the rquired dependencies.
 
 ## Process Flow
-Obtain YouTube API credentials:
-> Visit the Google Cloud Console.
+### Obtain YouTube API credentials:
+> Visit the `Google Cloud Console`.
 
 > Create a new project or select an existing project.
 
-> Enable the YouTube Data API v3 for your project.
+> Enable the `YouTube Data API v3` for your project.
 
-> Create API credentials for youtube API v3.
+> Create `API credentials` for youtube API v3.
 
-ETL Process
-> Extracting Data from youtube API.
+### ETL Process
+> `Extracting` Data from youtube API.
 
-> Transforming data into required format.
+> `Transforming` data into required format.
 
-> Loading Data into SQL
+> `Loading` Data into SQL
 
 ## Application Flow
 Select `Data Retrieval and Processing` Page from dropdown menu at the sidebar.
