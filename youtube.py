@@ -138,7 +138,7 @@ def get_comment_videoinfo(youtube, video_id):
 def push_to_mongodb(data):
     try:
         # Connect to MongoDB
-        client = pymongo.MongoClient("mongodb://guvi2023:RqIFSKy96frpVcMd@ac-x3adhoo-shard-00-00.wgfrtva.mongodb.net:27017,ac-x3adhoo-shard-00-01.wgfrtva.mongodb.net:27017,ac-x3adhoo-shard-00-02.wgfrtva.mongodb.net:27017/?ssl=true&replicaSet=atlas-12iwpy-shard-0&authSource=admin&retryWrites=true&w=majority")
+        client = pymongo.MongoClient("mongodb://guvi2023:<'your_password'>-x3adhoo-shard-00-00.wgfrtva.mongodb.net:27017,ac-x3adhoo-shard-00-01.wgfrtva.mongodb.net:27017,ac-x3adhoo-shard-00-02.wgfrtva.mongodb.net:27017/?ssl=true&replicaSet=atlas-12iwpy-shard-0&authSource=admin&retryWrites=true&w=majority")
         db = client['Youtube']
         collection = db['Data']
 
@@ -201,11 +201,11 @@ def duration_to_seconds(duration):
 def sql_connection():
     try:
         connection = psycopg2.connect(
-            host='localhost', 
-            user ='postgres',
-            password='Jk@141296',
-            port=5432,
-            database='Youtube'
+            host='Host_name', 
+            user ='user_name',
+            password='password',
+            port=port_number,
+            database='database_name'
         )
         cur = connection.cursor()
     except Error as e:
