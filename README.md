@@ -5,13 +5,13 @@
 
 [Features](#Features)
 
-[Technologies_Used](#Technologies-Used)
+[Technologies Used](#Technologies-Used)
 
-[Process_Flow](#Process-Flow) 
+[Process Flow](#Process-Flow) 
 
-[Application_Flow](#Application-Flow)
+[Application Flow](#Application-Flow)
 
-[Additional_Information](#Additional-Information)
+[Additional Information](#Additional-Information)
 
 [License](#License)
 
