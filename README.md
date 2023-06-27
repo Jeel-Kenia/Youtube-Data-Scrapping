@@ -87,6 +87,9 @@ Select a channel name from the dropdown `Channel Details` and click on `Push to 
 
 Once imported, you can select the `Analysis and Reports` Page from the drop down to get a detailed analysis of the collected data.
 
+### Video Link:
+
+[![image](https://github.com/Jeel-Kenia/Youtube-Data-Scrapping/blob/main/Screenshot%202023-06-27%20at%204.22.29%20PM.png)](https://www.linkedin.com/posts/jeel-kenia_datascience-python-dataanalysis-activity-7072520880328777728-6ain?utm_source=share&utm_medium=member_desktop)
 
 ## Additional Information
 Please note that when using this application, it is essential to comply with the YouTube Data API's terms of service and adhere to its usage limits to ensure uninterrupted access to the API. If you encounter any issues or have questions regarding the YouTube Data Scraper, please refer to the project's detailed documentation available in the GitHub repository.
